@@ -1,4 +1,9 @@
+import { useState } from "react"
+
 export const Board = () => {
+//先行と後攻をstateで管理する //trueの場合白が先行
+  const [player, setPlayer] = useState(true)
+
 
   //メモ: 白が値１ 黒が値2 何も置いてない場所は0にしてその総数で勝敗を決める
   //メモ: 1同士に挟まれたものはひっくり返す
